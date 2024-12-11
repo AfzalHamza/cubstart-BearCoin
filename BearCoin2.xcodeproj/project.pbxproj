@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		532B7CBB2D0A1D3B0005134E /* BearCoin2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */; };
 		532B7CBD2D0A1D3B0005134E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBC2D0A1D3B0005134E /* ContentView.swift */; };
-		532B7CBF2D0A1D3B0005134E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBE2D0A1D3B0005134E /* Item.swift */; };
 		532B7CC12D0A1D3D0005134E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532B7CC02D0A1D3D0005134E /* Assets.xcassets */; };
 		532B7CC42D0A1D3D0005134E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532B7CC32D0A1D3D0005134E /* Preview Assets.xcassets */; };
 		532B7CCE2D0A1D3D0005134E /* BearCoin2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CCD2D0A1D3D0005134E /* BearCoin2Tests.swift */; };
@@ -45,7 +44,6 @@
 		532B7CB72D0A1D3B0005134E /* BearCoin2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearCoin2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCoin2App.swift; sourceTree = "<group>"; };
 		532B7CBC2D0A1D3B0005134E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		532B7CBE2D0A1D3B0005134E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		532B7CC02D0A1D3D0005134E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532B7CC32D0A1D3D0005134E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		532B7CC92D0A1D3D0005134E /* BearCoin2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearCoin2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +116,6 @@
 				532B7CF32D0A1EBB0005134E /* WelcomePageView.swift */,
 				532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */,
 				532B7CBC2D0A1D3B0005134E /* ContentView.swift */,
-				532B7CBE2D0A1D3B0005134E /* Item.swift */,
 				532B7CC02D0A1D3D0005134E /* Assets.xcassets */,
 				532B7CC22D0A1D3D0005134E /* Preview Content */,
 			);
@@ -295,7 +292,6 @@
 				532B7CEE2D0A1E7F0005134E /* BoostTabView.swift in Sources */,
 				532B7CF42D0A1EBB0005134E /* WelcomePageView.swift in Sources */,
 				532B7CEC2D0A1E5B0005134E /* ShopTabView.swift in Sources */,
-				532B7CBF2D0A1D3B0005134E /* Item.swift in Sources */,
 				532B7CF22D0A1EA80005134E /* ProgressPageView.swift in Sources */,
 				532B7CBB2D0A1D3B0005134E /* BearCoin2App.swift in Sources */,
 				532B7CEA2D0A1E450005134E /* ListModel.swift in Sources */,
