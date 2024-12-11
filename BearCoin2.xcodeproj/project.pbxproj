@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532B7CBB2D0A1D3B0005134E /* BearCoin2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */; };
+		532B7CBD2D0A1D3B0005134E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBC2D0A1D3B0005134E /* ContentView.swift */; };
+		532B7CBF2D0A1D3B0005134E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CBE2D0A1D3B0005134E /* Item.swift */; };
+		532B7CC12D0A1D3D0005134E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532B7CC02D0A1D3D0005134E /* Assets.xcassets */; };
+		532B7CC42D0A1D3D0005134E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532B7CC32D0A1D3D0005134E /* Preview Assets.xcassets */; };
+		532B7CCE2D0A1D3D0005134E /* BearCoin2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CCD2D0A1D3D0005134E /* BearCoin2Tests.swift */; };
+		532B7CD82D0A1D3D0005134E /* BearCoin2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CD72D0A1D3D0005134E /* BearCoin2UITests.swift */; };
+		532B7CDA2D0A1D3D0005134E /* BearCoin2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CD92D0A1D3D0005134E /* BearCoin2UITestsLaunchTests.swift */; };
+		532B7CE82D0A1E340005134E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CE72D0A1E340005134E /* GameState.swift */; };
+		532B7CEA2D0A1E450005134E /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CE92D0A1E450005134E /* ListModel.swift */; };
+		532B7CEC2D0A1E5B0005134E /* ShopTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CEB2D0A1E5B0005134E /* ShopTabView.swift */; };
+		532B7CEE2D0A1E7F0005134E /* BoostTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CED2D0A1E7F0005134E /* BoostTabView.swift */; };
+		532B7CF02D0A1E8E0005134E /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CEF2D0A1E8E0005134E /* MainPageView.swift */; };
+		532B7CF22D0A1EA80005134E /* ProgressPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CF12D0A1EA80005134E /* ProgressPageView.swift */; };
+		532B7CF42D0A1EBB0005134E /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B7CF32D0A1EBB0005134E /* WelcomePageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		532B7CCA2D0A1D3D0005134E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532B7CAF2D0A1D3B0005134E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532B7CB62D0A1D3B0005134E;
+			remoteInfo = BearCoin2;
+		};
+		532B7CD42D0A1D3D0005134E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532B7CAF2D0A1D3B0005134E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532B7CB62D0A1D3B0005134E;
+			remoteInfo = BearCoin2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		532B7CB72D0A1D3B0005134E /* BearCoin2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearCoin2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCoin2App.swift; sourceTree = "<group>"; };
+		532B7CBC2D0A1D3B0005134E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		532B7CBE2D0A1D3B0005134E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		532B7CC02D0A1D3D0005134E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		532B7CC32D0A1D3D0005134E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		532B7CC92D0A1D3D0005134E /* BearCoin2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearCoin2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532B7CCD2D0A1D3D0005134E /* BearCoin2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCoin2Tests.swift; sourceTree = "<group>"; };
+		532B7CD32D0A1D3D0005134E /* BearCoin2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearCoin2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532B7CD72D0A1D3D0005134E /* BearCoin2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCoin2UITests.swift; sourceTree = "<group>"; };
+		532B7CD92D0A1D3D0005134E /* BearCoin2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCoin2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		532B7CE72D0A1E340005134E /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		532B7CE92D0A1E450005134E /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		532B7CEB2D0A1E5B0005134E /* ShopTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabView.swift; sourceTree = "<group>"; };
+		532B7CED2D0A1E7F0005134E /* BoostTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostTabView.swift; sourceTree = "<group>"; };
+		532B7CEF2D0A1E8E0005134E /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		532B7CF12D0A1EA80005134E /* ProgressPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPageView.swift; sourceTree = "<group>"; };
+		532B7CF32D0A1EBB0005134E /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		532B7CB42D0A1D3B0005134E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CC62D0A1D3D0005134E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CD02D0A1D3D0005134E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532B7CAE2D0A1D3B0005134E = {
+			isa = PBXGroup;
+			children = (
+				532B7CB92D0A1D3B0005134E /* BearCoin2 */,
+				532B7CCC2D0A1D3D0005134E /* BearCoin2Tests */,
+				532B7CD62D0A1D3D0005134E /* BearCoin2UITests */,
+				532B7CB82D0A1D3B0005134E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		532B7CB82D0A1D3B0005134E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CB72D0A1D3B0005134E /* BearCoin2.app */,
+				532B7CC92D0A1D3D0005134E /* BearCoin2Tests.xctest */,
+				532B7CD32D0A1D3D0005134E /* BearCoin2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		532B7CB92D0A1D3B0005134E /* BearCoin2 */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CE62D0A1E230005134E /* Model */,
+				532B7CEB2D0A1E5B0005134E /* ShopTabView.swift */,
+				532B7CED2D0A1E7F0005134E /* BoostTabView.swift */,
+				532B7CEF2D0A1E8E0005134E /* MainPageView.swift */,
+				532B7CF12D0A1EA80005134E /* ProgressPageView.swift */,
+				532B7CF32D0A1EBB0005134E /* WelcomePageView.swift */,
+				532B7CBA2D0A1D3B0005134E /* BearCoin2App.swift */,
+				532B7CBC2D0A1D3B0005134E /* ContentView.swift */,
+				532B7CBE2D0A1D3B0005134E /* Item.swift */,
+				532B7CC02D0A1D3D0005134E /* Assets.xcassets */,
+				532B7CC22D0A1D3D0005134E /* Preview Content */,
+			);
+			path = BearCoin2;
+			sourceTree = "<group>";
+		};
+		532B7CC22D0A1D3D0005134E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CC32D0A1D3D0005134E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		532B7CCC2D0A1D3D0005134E /* BearCoin2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CCD2D0A1D3D0005134E /* BearCoin2Tests.swift */,
+			);
+			path = BearCoin2Tests;
+			sourceTree = "<group>";
+		};
+		532B7CD62D0A1D3D0005134E /* BearCoin2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CD72D0A1D3D0005134E /* BearCoin2UITests.swift */,
+				532B7CD92D0A1D3D0005134E /* BearCoin2UITestsLaunchTests.swift */,
+			);
+			path = BearCoin2UITests;
+			sourceTree = "<group>";
+		};
+		532B7CE62D0A1E230005134E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				532B7CE72D0A1E340005134E /* GameState.swift */,
+				532B7CE92D0A1E450005134E /* ListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		532B7CB62D0A1D3B0005134E /* BearCoin2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532B7CDD2D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2" */;
+			buildPhases = (
+				532B7CB32D0A1D3B0005134E /* Sources */,
+				532B7CB42D0A1D3B0005134E /* Frameworks */,
+				532B7CB52D0A1D3B0005134E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BearCoin2;
+			productName = BearCoin2;
+			productReference = 532B7CB72D0A1D3B0005134E /* BearCoin2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		532B7CC82D0A1D3D0005134E /* BearCoin2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532B7CE02D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2Tests" */;
+			buildPhases = (
+				532B7CC52D0A1D3D0005134E /* Sources */,
+				532B7CC62D0A1D3D0005134E /* Frameworks */,
+				532B7CC72D0A1D3D0005134E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532B7CCB2D0A1D3D0005134E /* PBXTargetDependency */,
+			);
+			name = BearCoin2Tests;
+			productName = BearCoin2Tests;
+			productReference = 532B7CC92D0A1D3D0005134E /* BearCoin2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		532B7CD22D0A1D3D0005134E /* BearCoin2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532B7CE32D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2UITests" */;
+			buildPhases = (
+				532B7CCF2D0A1D3D0005134E /* Sources */,
+				532B7CD02D0A1D3D0005134E /* Frameworks */,
+				532B7CD12D0A1D3D0005134E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532B7CD52D0A1D3D0005134E /* PBXTargetDependency */,
+			);
+			name = BearCoin2UITests;
+			productName = BearCoin2UITests;
+			productReference = 532B7CD32D0A1D3D0005134E /* BearCoin2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		532B7CAF2D0A1D3B0005134E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					532B7CB62D0A1D3B0005134E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					532B7CC82D0A1D3D0005134E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 532B7CB62D0A1D3B0005134E;
+					};
+					532B7CD22D0A1D3D0005134E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 532B7CB62D0A1D3B0005134E;
+					};
+				};
+			};
+			buildConfigurationList = 532B7CB22D0A1D3B0005134E /* Build configuration list for PBXProject "BearCoin2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 532B7CAE2D0A1D3B0005134E;
+			productRefGroup = 532B7CB82D0A1D3B0005134E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				532B7CB62D0A1D3B0005134E /* BearCoin2 */,
+				532B7CC82D0A1D3D0005134E /* BearCoin2Tests */,
+				532B7CD22D0A1D3D0005134E /* BearCoin2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532B7CB52D0A1D3B0005134E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B7CC42D0A1D3D0005134E /* Preview Assets.xcassets in Resources */,
+				532B7CC12D0A1D3D0005134E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CC72D0A1D3D0005134E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CD12D0A1D3D0005134E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		532B7CB32D0A1D3B0005134E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B7CBD2D0A1D3B0005134E /* ContentView.swift in Sources */,
+				532B7CE82D0A1E340005134E /* GameState.swift in Sources */,
+				532B7CF02D0A1E8E0005134E /* MainPageView.swift in Sources */,
+				532B7CEE2D0A1E7F0005134E /* BoostTabView.swift in Sources */,
+				532B7CF42D0A1EBB0005134E /* WelcomePageView.swift in Sources */,
+				532B7CEC2D0A1E5B0005134E /* ShopTabView.swift in Sources */,
+				532B7CBF2D0A1D3B0005134E /* Item.swift in Sources */,
+				532B7CF22D0A1EA80005134E /* ProgressPageView.swift in Sources */,
+				532B7CBB2D0A1D3B0005134E /* BearCoin2App.swift in Sources */,
+				532B7CEA2D0A1E450005134E /* ListModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CC52D0A1D3D0005134E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B7CCE2D0A1D3D0005134E /* BearCoin2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B7CCF2D0A1D3D0005134E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B7CDA2D0A1D3D0005134E /* BearCoin2UITestsLaunchTests.swift in Sources */,
+				532B7CD82D0A1D3D0005134E /* BearCoin2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532B7CCB2D0A1D3D0005134E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532B7CB62D0A1D3B0005134E /* BearCoin2 */;
+			targetProxy = 532B7CCA2D0A1D3D0005134E /* PBXContainerItemProxy */;
+		};
+		532B7CD52D0A1D3D0005134E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532B7CB62D0A1D3B0005134E /* BearCoin2 */;
+			targetProxy = 532B7CD42D0A1D3D0005134E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		532B7CDB2D0A1D3D0005134E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		532B7CDC2D0A1D3D0005134E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		532B7CDE2D0A1D3D0005134E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BearCoin2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		532B7CDF2D0A1D3D0005134E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BearCoin2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		532B7CE12D0A1D3D0005134E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BearCoin2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BearCoin2";
+			};
+			name = Debug;
+		};
+		532B7CE22D0A1D3D0005134E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BearCoin2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BearCoin2";
+			};
+			name = Release;
+		};
+		532B7CE42D0A1D3D0005134E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BearCoin2;
+			};
+			name = Debug;
+		};
+		532B7CE52D0A1D3D0005134E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubstart.BearCoin2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BearCoin2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532B7CB22D0A1D3B0005134E /* Build configuration list for PBXProject "BearCoin2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532B7CDB2D0A1D3D0005134E /* Debug */,
+				532B7CDC2D0A1D3D0005134E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532B7CDD2D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532B7CDE2D0A1D3D0005134E /* Debug */,
+				532B7CDF2D0A1D3D0005134E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532B7CE02D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532B7CE12D0A1D3D0005134E /* Debug */,
+				532B7CE22D0A1D3D0005134E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532B7CE32D0A1D3D0005134E /* Build configuration list for PBXNativeTarget "BearCoin2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532B7CE42D0A1D3D0005134E /* Debug */,
+				532B7CE52D0A1D3D0005134E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 532B7CAF2D0A1D3B0005134E /* Project object */;
+}
