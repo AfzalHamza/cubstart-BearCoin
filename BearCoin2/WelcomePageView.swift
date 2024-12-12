@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct WelcomePageView: View {
+    @Environment(\.modelContext) private var modelContext
     
     @State var gameStarted = false
+    @State var gameState: GameState!
     
     var body: some View {
         VStack {
@@ -37,7 +40,7 @@ struct WelcomePageView: View {
                 .font(.system(size: 25, weight: .bold, design: .rounded))
                 .padding()
             Spacer()
-            Button(action: { gameStarted.toggle() })
+            Button(action: { load() })
             {
                 Image("WelcomePageBears")
                     .resizable()
@@ -48,13 +51,39 @@ struct WelcomePageView: View {
             }
         }
         .fullScreenCover(isPresented: $gameStarted) {
-            MainPageView()
+            if let gameState {
+                MainPageView()
+                    .environment(gameState)
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.blue)
+        .onChange(of: gameState) {
+            gameStarted.toggle()
+        }
+    }
+    
+    private func load() {
+        let request = FetchDescriptor<GameState>()
+        let data = try? modelContext.fetch(request)
+        
+        if let savedState = data?.first {
+            gameState = savedState
+        } else {
+            let defaultGameState = GameState.defaultState
+            gameState = defaultGameState
+            
+            do {
+                modelContext.insert(defaultGameState)
+                try modelContext.save()
+            } catch {
+                print("Cannot save \(error)")
+            }
+        }
     }
 }
 
 #Preview {
-    WelcomePageView().environmentObject(GameState())
+    WelcomePageView()
+        .environment(GameState.defaultState)
 }

@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct BoostTabView: View {
+    
+    @Environment(GameState.self) private var gameState
     
     @State private var items: [listItem] = [
         listItem(iconName: "2x Clicks", name: "2x Clicks", cost: 5, milestone: nil, quantityOwned: 0),
@@ -58,69 +59,18 @@ struct BoostTabView: View {
                 }
                 .fullScreenCover(isPresented: $shopTabClicked) {
                     shopTabView()
+                        .environment(gameState)
                 }
                 .fullScreenCover(isPresented: $mainTabClicked) {
                     MainPageView()
+                        .environment(gameState)
                 }
         }
     }
 }
-    
-    
-//    var body: some View {
-//        NavigationStack {
-//            VStack {
-//                ForEach(tab.itemList) {item in
-//                    shopItemView(item: item, color: .orange)}
-//            }
-//            .padding()
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            .background(.blue)
-//            .toolbar {
-//                ToolbarItemGroup(placement: .bottomBar) {
-//                    HStack {
-//                        Button(action: {
-//                            shopTabClicked.toggle()})
-//                        {
-//                            Image("Shop")
-//                                .resizable()
-//                                .frame(width: 65, height: 65)
-//                        }
-//                        Spacer()
-//                        Button(action: {
-//                            mainTabClicked.toggle()})
-//                        {
-//                            Image("Salmon")
-//                                .resizable()
-//                                .frame(width: 65, height: 65)
-//                        }
-//                        Spacer()
-//                        Button(action: {
-//                            boostTabClicked.toggle()})
-//                        {
-//                            Image("Boost")
-//                                .resizable()
-//                                .frame(width: 65, height: 65)
-//                        }
-//                    }
-//                    .padding(EdgeInsets(top: 35, leading: 10, bottom: 5, trailing: 10))
-//                }
-//            }
-//            .fullScreenCover(isPresented: $shopTabClicked) {
-//                shopTabView(tab: shopTab())
-//            }
-//            .fullScreenCover(isPresented: $mainTabClicked) {
-//                MainPageView()
-//            }
-//            .fullScreenCover(isPresented: $boostTabClicked) {
-//                BoostTabView(tab: boostTab())
-//            }
-//        }
-//    }
-//}
-
 
 
 #Preview {
-    BoostTabView().environmentObject(GameState())
+    BoostTabView()
+        .environment(GameState.defaultState)
 }

@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
-class GameState: ObservableObject {
-    @Published var bearCoins: Int = 0
-    @Published var multiplier: Int = 1
+@Model
+class GameState {
+    var bearCoins: Int = 0
+    var multiplier: Int = 1
+    
+    @Transient static var defaultState = GameState(bearCoins: 0, multiplier: 1)
+    
+    init(bearCoins: Int, multiplier: Int) {
+        self.bearCoins = bearCoins
+        self.multiplier = multiplier
+    }
 
     func purchaseItem(cost: Int) -> Bool {
         if bearCoins >= cost {

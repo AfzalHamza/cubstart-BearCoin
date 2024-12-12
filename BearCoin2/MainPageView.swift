@@ -7,16 +7,17 @@
 
 import SwiftUI
 import Observation
+import SwiftData
 
 struct MainPageView: View {
+    
+    @Environment(GameState.self) private var gameState
     
     @State var shopTabClicked = false
     @State var mainTabClicked = false
     @State var boostTabClicked = false
     @State var progressPageClicked = false
     @State var statsPageClicked = false
-    
-    @EnvironmentObject var gameState: GameState
     
     var body: some View {
         NavigationStack {
@@ -109,12 +110,15 @@ struct MainPageView: View {
             }.toolbarTitleDisplayMode(.large)
             .fullScreenCover(isPresented: $shopTabClicked) {
                 shopTabView()
+                    .environment(gameState)
             }
             .fullScreenCover(isPresented: $boostTabClicked) {
                 BoostTabView()
+                    .environment(gameState)
             }
             .sheet(isPresented: $progressPageClicked) {
                 ProgressPageView()
+                    .environment(gameState)
             }
         }
     }
@@ -122,5 +126,5 @@ struct MainPageView: View {
 
     
 #Preview {
-    MainPageView().environmentObject(GameState())
+    MainPageView()
 }

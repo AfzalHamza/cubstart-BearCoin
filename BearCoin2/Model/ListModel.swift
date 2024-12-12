@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import SwiftData
 
-@Model
+
 class listItem: Identifiable, ObservableObject {
 //    @Attribute(.unique) var id: UUID
     var id: UUID = UUID()
@@ -36,9 +35,9 @@ class listItem: Identifiable, ObservableObject {
 
 
 struct listItemView: View {
-   @Binding var item: listItem
+    @Binding var item: listItem
     
-    @EnvironmentObject var gameState: GameState
+    @Environment(GameState.self) var gameState: GameState
     
     var body: some View {
         HStack {
@@ -109,7 +108,7 @@ struct listView: View {
     @Binding var items: [listItem]
     
     
-    @EnvironmentObject var gameState: GameState
+    @Environment(GameState.self) var gameState: GameState
     
     var body: some View {
         if let pageTitle {
@@ -125,7 +124,6 @@ struct listView: View {
                 .listRowBackground(color)
                 .listRowSeparator(.hidden)
         }.listStyle(.plain)
-        
     
     }
 }

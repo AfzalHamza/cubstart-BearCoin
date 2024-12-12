@@ -20,23 +20,24 @@ struct ProgressPageView: View {
     ]
     
     var body: some View {
-        NavigationStack {
+        VStack {
+            HStack {
+                dismissButton
+                Spacer()
+            }
+            .padding()
             listView(pageTitle: "BEARS", color: .white, items: $items)
-                .toolbar {
-                    ToolbarItemGroup(placement: .automatic) {
-                        EmptyView() // Remove any default items
-                                    }
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
-                            dismiss()
-                        })
-                        {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(.red)
-                                .font(.system(size: 25))
-                        }
-                    }
-                }
+        }
+    }
+    
+    private var dismissButton: some View {
+        Button(action: {
+            dismiss()
+        })
+        {
+            Image(systemName: "xmark.circle.fill")
+                .foregroundStyle(.red)
+                .font(.system(size: 25))
         }
     }
 }
